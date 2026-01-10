@@ -4,6 +4,17 @@
 
 An **enterprise-grade AI-driven Debt Collection Agency (DCA) Management Platform** built for the FedEx SMART Hackathon. This platform centralizes overdue case management, automates workflows with AI-powered decision-making, and provides real-time SLA tracking and escalation capabilities.
 
+## Project Screenshots
+
+![Image 1](img/img1.png)
+![Image 2](img/img2.png)
+![Image 3](img/img3.png)
+![Image 4](img/img4.png)
+![Image 5](img/img5.png)
+![Image 6](img/img6.png)
+![Image 7](img/img7.png)
+![Image 8](img/img8.png)
+
 ### Key Features
 
 ✅ **Centralized Case Management** - Unified view of all overdue cases  
