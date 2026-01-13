@@ -1,5 +1,5 @@
 from pydantic_settings import BaseSettings
-from typing import Optional
+from typing import Optional, List
 
 
 class Settings(BaseSettings):
@@ -16,8 +16,15 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     DEBUG: bool = True
     
+    # CORS Origins (comma-separated string for production)
+    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:4567,http://localhost:8000"
+    
     # AI/ML
     AI_MODEL_PATH: str = "app/ai/models/recovery_model.pkl"
+    
+    def get_cors_origins(self) -> List[str]:
+        """Parse CORS origins from comma-separated string"""
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
     
     class Config:
         env_file = ".env"

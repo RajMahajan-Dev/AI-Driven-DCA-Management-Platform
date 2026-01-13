@@ -1,0 +1,13 @@
+# Production credentials - DO NOT COMMIT
+PRODUCTION_CREDENTIALS.md
+*.env.production
+*.env.production.example
+.env.production
+backend/.env.production
+frontend/.env.production
+
+# Local environment files  
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
